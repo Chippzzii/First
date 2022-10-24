@@ -18,16 +18,16 @@ public class rateZahl {
     }	//close Main
     public static void win() {
 	 if(rndInt == searchedInt) {
-		 System.out.println("Der Computer hat die Zahl " + rndInt + " gewählt");
-		 System.out.println("Herzlichen Glückwunsch, du hast die Zahl erraten.");
-		 System.out.println("Du hast " + countTry + " Versuch benötigt um die Zahl zu erraten.");
+		 System.out.println("Der Computer hat die Zahl " + rndInt + " gewÃ¤hlt");
+		 System.out.println("Herzlichen GlÃ¼ckwunsch, du hast die Zahl erraten.");
+		 System.out.println("Du hast " + countTry + " Versuch benÃ¶tigt um die Zahl zu erraten.");
 	 }
     
     }
     public static void start() {
-    	System.out.println("Errate welche Zahl der PC gewählt hat... ");
+    	System.out.println("Errate welche Zahl der PC gewÃ¤hlt hat... ");
         rndInt = rnd.nextInt(300) + 1;
-        System.out.println(rndInt); //controll ki Input
+        System.out.println(rndInt); //controll ki Input, for actually gameplay, remove this line
 
         System.out.println("Bitte gebe eine Zahl zwischen 1 und 300 an");
         searchedInt = input.nextInt();        
@@ -37,7 +37,7 @@ public class rateZahl {
         while (searchedInt != rndInt ){
         	
         	 if (rndInt > searchedInt) {
-                 System.out.println("Bitte geben Sie eine Zahl ein die Größer ist...");
+                 System.out.println("Bitte geben Sie eine Zahl ein die GrÃ¶ÃŸer ist...");
                     countTry++;
                 }
 
