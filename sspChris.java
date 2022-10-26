@@ -31,6 +31,7 @@ public class sspChris {
                 System.out.println("Der Computer wählt. Schere, Stein oder Papier?");
                 pc = rnd.nextInt(3) + 1;
                 changePc();
+                warten();
 
                 runde();
             }
@@ -40,13 +41,14 @@ public class sspChris {
             else
                 System.out.println("Der Computer hat gewonnen!!");
 
+            warten();
 
             System.out.println("----Nächste Runde?? (Y/N)----");
             input = scan.next().charAt(0);
             scoreplayer = 0;
             scorepc = 0;
 
-        } while(input =='y');
+        } while(input == 'y');
 
 
 
@@ -109,7 +111,6 @@ public class sspChris {
             scoreplayer++;
         }
         else   {
-            warten();
             System.out.println("Verloren!!");
             scorepc++;
         }
